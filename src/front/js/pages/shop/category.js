@@ -54,7 +54,7 @@ export const Category = () => {
 
 		<div className="shop-view-category-header">
 			<div className="shop-view-category-header-perma-link">
-				<span className="shop-view-category-header-abled" onClick={()=> navigate("/")}>
+				<span className="shop-view-category-header-abled" onClick={()=> navigate("/home")}>
 					Inicio
 				</span>
 				&nbsp;/&nbsp; 

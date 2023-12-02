@@ -13,7 +13,7 @@ export const ForgotPassword = () => {
 		}
 	);
 	useEffect(() => {
-		if(store.token) navigate("/")
+		if(store.token) navigate("/home")
 		actions.changeAdminNav(false)
 	}, []);
 
