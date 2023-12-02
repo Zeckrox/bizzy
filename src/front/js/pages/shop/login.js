@@ -16,7 +16,7 @@ export const Login = () => {
 	);
 
 	useEffect(() => {
-		if(store.token) navigate("/home")
+		if(store.token) navigate("/")
 		actions.changeAdminNav(false)
 		document.getElementById("content").scroll(0,0)
 	}, []);
@@ -29,7 +29,7 @@ export const Login = () => {
 		}
 		else{
 			let create = await actions.getUserToken(user)
-			if (create) navigate("/home")
+			if (create) navigate("/")
 			else{
 				toast.error("Usuario inexistente o contraseña incorrecta",{
 					position: "bottom-center"

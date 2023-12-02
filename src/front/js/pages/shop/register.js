@@ -22,7 +22,7 @@ export const Register = () => {
 	);
 
 	useEffect(() => {
-		if(store.token) navigate("/home")
+		if(store.token) navigate("/")
 		actions.changeAdminNav(false)
 	}, []);
 
@@ -44,7 +44,7 @@ export const Register = () => {
             let info = await actions.postUser(user)
             if(info){
                 toast.success(`Usuario registrado! Bienvenido ${user.name}`)
-			    navigate("/home")
+			    navigate("/")
                 return
             }
             else{

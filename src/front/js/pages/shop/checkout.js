@@ -173,7 +173,7 @@ export const Checkout = () => {
 			
 			actions.addToCart([])
 			toast.success("Orden realizada con éxito!", {autoClose: false})
-			navigate("/home")
+			navigate("/")
 		}
 	}
 

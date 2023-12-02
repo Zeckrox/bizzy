@@ -73,7 +73,7 @@ export const ProductDetails = ()=> {
 
 		<div className="shop-view-category-header" style={{marginBottom: "40px"}}>
 			<div className="shop-view-category-header-perma-link">
-				<span className="shop-view-category-header-abled" onClick={()=> navigate("/home")}>
+				<span className="shop-view-category-header-abled" onClick={()=> navigate("/")}>
 					Inicio
 				</span>
 				&nbsp;/&nbsp; 

@@ -43,7 +43,7 @@ export const Navbar = (navb) => {
 	return <>
 		<nav className="navbar-main" style={{background: "#540EA7"}}>
 			<img src="https://firebasestorage.googleapis.com/v0/b/bizzy-da700.appspot.com/o/shop%2Fimage.png?alt=media&token=3fa8c0af-c2a8-4f28-9a9d-59ee374921af"
-			onClick={()=> navigate("/home")}/>
+			onClick={()=> navigate("/")}/>
 
 			<input className="nav-shop-search-products" placeholder="Buscar productos..."
 			onKeyDown={(e)=> e.key === "Enter"? navigate(`/search/${e.target.value}`) : ""}/>

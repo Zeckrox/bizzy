@@ -10,7 +10,7 @@ export const AdminNavbar = () => {
 	const navigate = useNavigate();
 	return (
 		<nav className="admin-navbar-main">
-			<button onClick={()=>navigate("/home")}>
+			<button onClick={()=>navigate("/")}>
 				<FaStore/> Ir a la Tienda
 			</button>
 			<div className="navbar-user">

@@ -12,12 +12,12 @@ export const Sidebar = () => {
 
     //REDIRECT TO LOGIN IF NOT LOGGED AS ADMIN
 	useEffect(() => {
-		if(!localStorage.getItem("token") || store.user.id && !store.user.admin) navigate("/home")
+		if(!localStorage.getItem("token") || store.user.id && !store.user.admin) navigate("/")
 	}, [store.user])
 
     useEffect(() => {
 		actions.checkToken()
-        if(!localStorage.getItem("token") || store.user.id && !store.user.admin) navigate("/home")
+        if(!localStorage.getItem("token") || store.user.id && !store.user.admin) navigate("/")
 	}, [store.active])
 
 	return <>
